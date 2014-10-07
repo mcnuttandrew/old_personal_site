@@ -2,13 +2,15 @@
 <h1> NBODY SIMULATOR</h1>
 <a href="/"> Return </a>
 <div class="row">
-	<div class="col-xs-4 col-xs-offset-1 sidebar" style="color:white">
+	<div class="col-xs-3 col-xs-offset-1 sidebar nbody-sidebar" style="color:white">
 		<p>This is a low count n-body simulator I built in December 2013. It is built in the Processing langauge and supported here by the Processing.js enviroment. In this visualization the particles operate in a roughly gravitational way, in that they follow 1/r interaction, and there is an enforced maximum speed.</p>
 			
 			<p>The simulation uses a traditional leap-frog integration scheme for computing the values. The size of the rings are approximately proportionate to the "mass" of the particle. The black lines indicates interaction between particles, but have a minimum interaction in order to appear.</p>
+			<p>
+				Click or hit x to add particles, z to remove, c to change wall type (hard/looped)
+			</p>
 	</div>
-	<div class="col-xs-7 nbody-container">
+	<div class="col-xs-7 nbody-container master-container">
 		<canvas data-processing-sources="assets/central_force.js"></canvas>
-		<h3> Click or hit x to add particles, z to remove, c to change wall type (hard/looped)</h3>
 	</div>
 </div>

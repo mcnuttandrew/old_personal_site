@@ -101,16 +101,38 @@ div#header {
 	max-width: 550px;
 }
 
+.nbody-container {
+	outline: none;
+	width: 700px;
+}
+
+
 .portfolio-examples{
 	list-style-type: none;
 }
 
 .inside{
 	margin-top: -4%;
-//	min-width: ;
 }
 
 .pic-side {
 	margin-top: 3%;
 	width: 180px;
+}
+.front-list{
+	color: white;
+	list-style-type: none;
+}
+
+.sidebar{
+	background-color: rgba(200,200,200,0.5);	
+	height: 100%;
+}
+
+.master-container{
+	background-color: rgba(100,100,100,0.5);
+}
+
+.nbody-sidebar{
+	height: 405px;
 }

@@ -7,122 +7,116 @@
 	</div>
 </div>
 
-<div id="master-container">
-	<div id="about">
-		<div class="row">
-			<div class="col-xs-3 col-xs-offset-1">
-				<h1 > About Me</h1>
-			</div>
-			<div class="col-xs-7">
-				<h4 > Howdy, my name is Andrew McNutt and I am web developer in San Francisco. My background is in Physics, specifically in the field of alternative Classical Mechanics.  I am a full stack web developer, but I am more or less back-end/data-viz leaning.  </h4>
+<div class="row">
+	<div class="col-xs-3 col-xs-offset-1 sidebar">
+		<ul class="front-list">
+			<li><h2>About Me</h2></li>
+			<li><h2>Skills</h2></li>
+			<li><h2>Portfolio</h2></li>
+			<li><h2>Research</h2></li>
+		</ul>
+	</div>
+	<div class="col-xs-7 master-container">
+		<div id="about">
+			<h1> about</h1>
+			<div class="row">
+					<div style="width:100px">
+						<%= image_tag("self-photo-1.jpg", :alt => "Me in Utah") %>
+					</div>
+					<h4 > Howdy, my name is Andrew McNutt and I am web developer in San Francisco. My background is in Physics, specifically in the field of alternative Classical Mechanics.  I am a full stack web developer, but I am more or less back-end/data-viz leaning. I feel greatly for the plight of the American desert. </h4>
 			</div>
 		</div>
-	</div>
-		<br>
-	<div id="skills">
-		<div class="row">
-			<div class="col-xs-3 col-xs-offset-1">
-				<h1 > Skills</h1>
-			</div>
-			<div class="col-xs-7 text-center">
-				<ul class="technologies">
-					<li class="tech-li"><div id="ruby"></div> Ruby </li>
-					<li class="tech-li"><div id="rails"></div> Rails </li>
-					<li class="tech-li"><div id="js"></div> Javascript</li>
-					<li class="tech-li"><div id="backbone"></div>Backbone.js</li>
-					<li class="tech-li"><div id="bootstrap"></div>Bootstrap</li>
-					<li class="tech-li"><div id="node"></div>Node.js</li>
-					<li class="tech-li"><div id="processing"></div>Processing</li>
-					<li class="tech-li"><div id="latex"></div>Latex</li>
-					<li class="tech-li"><div id="pg"></div>PostGRES</li>
-				</ul>
-				
-			</div>
-			<div class="col-xs-offset-4 col-xs-7">
-				<h4> I am familair with a variety of technologies and techniques, including the ones pictographically listed above. </h4>
+			<br>
+		<div id="skills" class="row">
+			<h1> skills</h1>
+					<ul class="technologies col-xs-12">
+						<li class="tech-li"><div id="ruby"></div> Ruby </li>
+						<li class="tech-li"><div id="rails"></div> Rails </li>
+						<li class="tech-li"><div id="js"></div> Javascript</li>
+						<li class="tech-li"><div id="backbone"></div>Backbone.js</li>
+						<li class="tech-li"><div id="bootstrap"></div>Bootstrap</li>
+						<li class="tech-li"><div id="node"></div>Node.js</li>
+						<li class="tech-li"><div id="processing"></div>Processing</li>
+						<li class="tech-li"><div id="latex"></div>Latex</li>
+						<li class="tech-li"><div id="pg"></div>PostGRES</li>
+					</ul>
+			<div class="col-xs-12">
+				<h4> I am familair with a variety of technologies and techniques, including the ones pictographically listed above. I am also quite familiar with Mathematica (as well as Grid Mathematica), Matlab, Lab View, D3, and git, among many others.  </h4>
 			</div>
 		</div>
-	</div>
-		<br>
-	<div id="Portfolio">
-		<div class="row">
-			<div class="col-xs-3 col-xs-offset-1">
-				<h1 > Portfolio</h1>
-			</div>
-			<div class="col-xs-7">
-				<h4> For a comphrensive list of my coding projects, check out my <a href="https://github.com/mcnuttandrew/">github</a>, but here are some highlights</h4>
-				<ul class="portfolio-examples">
-					<li> 
-						<div class="row">
-							<div class="col-xs-4 pic-side">
-								<%= image_tag("tea-cup.png", :alt => "Tea Cup") %>
-							</div>
-							<div class="col-xs-7 inside">
-								<h3><a href="http://tea-cup.org">Teacup</a> </h3><h5><a href="https://github.com/mcnuttandrew/Project-Teacup">(source)</a></h5>
-								<h4> A microblogging platform for viewing the collective unconscious. Single page Backbone app based on
-RESTful practices. Features data visualizations including trending topics and user population.
-Seed data was generated using a variety of large scale data scrapes and data cleaning techniques.
-Technologies included <i>Rails API, Backbone.js, jQuery, Nokogiri, and D3.</i>  </h4>
-							</div>
-						</div>	
-					</li>
-					<br>
-					<li> 
+		
+		<div id="Portfolio">
+<h1> portfolio</h1>
+					<h4> For a comphrensive list of my coding projects, check out my <a href="https://github.com/mcnuttandrew/">github</a>, but here are some highlights</h4>
+					<ul class="portfolio-examples">
+						<li> 
+							<div class="row">
+								<div class="col-xs-4 pic-side">
+									<a href="http://tea-cup.org"><%= image_tag("tea-cup.png", :alt => "Tea Cup") %></a>
+								</div>
+								<div class="col-xs-7 inside">
+									<h3><a href="http://tea-cup.org">Teacup</a> </h3><h5><a href="https://github.com/mcnuttandrew/Project-Teacup">(source)</a></h5>
+									<h4> A microblogging platform for viewing the collective unconscious. Single page Backbone app based on
+	RESTful practices. Features data visualizations including trending topics and user population.
+	Seed data was generated using a variety of large scale data scrapes and data cleaning techniques.
+	Technologies included <i>Rails API, Backbone.js, jQuery, Nokogiri, and D3.</i>  </h4>
+								</div>
+							</div>	
+						</li>
+						<br>
+						<li> 
 						
-						<div class="row">
-							<div class="col-xs-6 inside">
-								<h3><a href="http://why-not-ipsum.herokuapp.com">Why Not Ipsum</a> </h3><h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
-								<h4> A Lorem Ipsum generator populated by Zoidberg quotes, built following RESTful design practices.
-Included a large series of data scrapes, which were necessarily followed by intensive data cleaning.
-Technologies included <i>Rails API, Backbone.js, and Nokogiri.</i></h4>
+							<div class="row">
+								<div class="col-xs-6 inside">
+									<h3><a href="http://why-not-ipsum.herokuapp.com">Why Not Ipsum</a> </h3><h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
+									<h4> A Lorem Ipsum generator populated by Zoidberg quotes, built following RESTful design practices.
+	Included a large series of data scrapes, which were necessarily followed by intensive data cleaning.
+	Technologies included <i>Rails API, Backbone.js, and Nokogiri.</i></h4>
+								</div>
+								<div class="col-xs-4  pic-side">
+									<a href="http://why-not-ipsum.herokuapp.com"><%= image_tag("zoidberg.png", :alt => "Why Not Ipsum???") %></a> 
+									
+								</div>
 							</div>
-							<div class="col-xs-4  pic-side">
-								<%= image_tag("zoidberg.png", :alt => "Tea Cup") %>
-							</div>
-						</div>
-					</li>
-					<br>
-					<li> 
-						<div class="row">
-							<div class="col-xs-4 pic-side">
-								<%= image_tag("tea-cup.png", :alt => "Tea Cup") %>
-							</div>
-							<div class="col-xs-7 inside">
-								<h3><a href="http://tea-cup.org">Asteroids</a> </h3><h5><a href="https://github.com/mcnuttandrew/Asteroids">(source)</h5>
-								<h4>  A reimaging ofthe classic arcade game. Technologies included <i> Javascipt, HTML5 Canvas, and jQuery </i>   </h4>
-							</div>
-						</div>	
-					</li>
-					<br>
-					<li> 
+						</li>
+						<br>
+						<li> 
+							<div class="row">
+								<div class="col-xs-4 pic-side">
+									<%= image_tag("tea-cup.png", :alt => "Tea Cup") %>
+								</div>
+								<div class="col-xs-7 inside">
+									<h3><a href="http://tea-cup.org">Asteroids</a> </h3><h5><a href="https://github.com/mcnuttandrew/Asteroids">(source)</h5>
+									<h4>  A reimaging ofthe classic arcade game. Technologies included <i> Javascipt, HTML5 Canvas, and jQuery </i>   </h4>
+								</div>
+							</div>	
+						</li>
+						<br>
+						<li> 
 						
-						<div class="row">
-							<div class="col-xs-6 inside">
-								<h3><a href="/nbody">N-Body Simulator</a> </h3><h5><a href="https://github.com/mcnuttandrew/Why-Not-Zoidberg">(source)</a></h5>
-								<h4>  A low N gravitional interaction simulator built in processing.   </h4>
+							<div class="row">
+								<div class="col-xs-6 inside">
+									<h3><a href="/nbody">N-Body Simulator</a> </h3><h5><a href="https://github.com/mcnuttandrew/N-Body-Simulator">(source)</a></h5>
+									<h4>  A low N gravitional interaction simulator built in processing.   </h4>
+								</div>
+								<div class="col-xs-4  pic-side">
+									<a href="/nbody"><%= image_tag("nbody.png", :alt => "N Body") %></a>
+								</div>
 							</div>
-							<div class="col-xs-4  pic-side">
-								<%= image_tag("nbody.png", :alt => "N Body") %>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<br>
+						</li>
+					</ul>
+				</div>
+		<br>
 	
-	<div id="Research">
-		<div class="row">
-			<div class="col-xs-3 col-xs-offset-1">
-				<h1 > Research</h1>
-			</div>
-			<div class="col-xs-7">
-				<h4>During my senior year at Reed I wrote my undergraduate thesis on an alternative representation of classical mechanics called Nonequivalent Lagrangian Mechanics. It was advised by Nelia Mann. You can read my thesis <a href="/thesis.pdf"> here.</a>
-				</h4>				
-				<h4>Throughout my undergraduate career I had a prevailing interest in the geometrically ambigous shape, the N-Hedron. It is formed by taking an integer, N, number of points, placing them on the sphere and demanding that they be maximally far apart. This culimated in a indepdent project, in which I implemented three different algorithms for constructing these shapes. You can find out more about this project <a href="/nhedron.pdf"> here. </a> One of the major aspects of this project was dealing with a large (for Mathematica) amount of data which reached up into the millions of data points. 
-				</h4>
-			</div>
+		<div id="Research">
+				<h1> research</h1>
+			
+					<h4>During my senior year at Reed I wrote my undergraduate thesis on an alternative representation of classical mechanics called Nonequivalent Lagrangian Mechanics. It was advised by Nelia Mann. You can read my thesis <a href="/thesis.pdf"> here.</a>
+					</h4>				
+					<h4>Throughout my undergraduate career I had a prevailing interest in the geometrically ambigous shape, the N-Hedron. It is formed by taking an integer, N, number of points, placing them on the sphere and demanding that they be maximally far apart. This culimated in a indepdent project, in which I implemented three different algorithms for constructing these shapes. You can find out more about this project <a href="/nhedron.pdf"> here. </a> One of the major aspects of this project was dealing with a large (for Mathematica) amount of data which reached up into the millions of data points. 
+					</h4>
+				
+			
 		</div>
 	</div>
 </div>
