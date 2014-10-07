@@ -1,7 +1,7 @@
 setTimeout(function(){
 	var dataCollect = $('body').data();
 	var dataCollect = dataCollect["bs.scrollspy"];
-	debugger;
+	// debugger;
 	dataCollect.options.offset = 100;
 	
 	dataCollect.process();
