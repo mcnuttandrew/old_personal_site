@@ -92,8 +92,15 @@ div#header {
 	float: left;
 }
 
+
+
 .tech-li {
 	color:white;
+}
+
+.portfolio-examples li:hover {
+	border: thin solid red;
+	
 }
 
 .nbody-container *{
