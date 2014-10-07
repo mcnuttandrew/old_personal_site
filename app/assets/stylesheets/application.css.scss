@@ -38,50 +38,33 @@ div#header {
 	background-repeat: no-repeat;
 }
 
-#ruby, #rails, #js, #backbone, #bootstrap, #node, #processing, #pg, #latex {
+#ruby, #rails, #js, #backbone, #bootstrap, #node, #processing, #pg, {
 	height: 100px;
 	width: 100px;
-	
-	background-size: cover;
-	background-position: center; // or center center
-	background-repeat: no-repeat;
+	background-color: black;
+//	background-size: cover;
+//	background-position: center; // or center center
+//	background-repeat: no-repeat;
 }
 
-#ruby {
-	background-image: url('Ruby_logo.png');
+#ruby img, #rails img, #js img, #backbone img, #bootstrap img, #processing img, #pg img, #latex img{
+	height: 100px;
+	width: 100px;
 }
 
-#rails {
-	background-image: url('Ruby_on_Rails_logo.svg');
-}
-
-#js {
-	background-image: url('JavaScript-logo.png');
-}
-
-#backbone {
-	background-image: url('backbone.png');
-}
-
-#bootstrap {
-	background-image: url('Boostrap_logo.svg');
-}
-
-#node {
-	background-image: url('nodejs_logo.png');
+#node img{
 	width: 200px;
-}
-
-#processing {
-	background-image: url('Processing_Logo_Clipped.svg');
-}
-
-#pg {
-	background-image: url('postgres.jpeg');
+	height: 100px;
 }
 
 #latex {
-	background-image: url('LaTeX_logo.svg');
+	width: 100px;
+	height: 100px;
+}
+
+#node{
+	width: 200px;
+	height: 100px;
 }
 
 .technologies {
