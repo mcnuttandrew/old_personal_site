@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= scroll-spy-correct
 //= require processing.min
 //= require_tree .

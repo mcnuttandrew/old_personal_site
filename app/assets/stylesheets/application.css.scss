@@ -32,7 +32,7 @@ h4 {
 
 div#header {
 	height: 400px;
-	background-image: url('background.jpg');
+	background-image: url('background.JPG');
 	background-size: cover;
 	background-position: center; // or center center
 	background-repeat: no-repeat;
@@ -99,7 +99,7 @@ div#header {
 }
 
 .portfolio-examples li:hover {
-	border: thin solid red;
+//	border: thin solid red;
 	
 }
 
@@ -127,13 +127,19 @@ div#header {
 	width: 180px;
 }
 .front-list{
+	margin-left: -20%;
 	color: white;
 	list-style-type: none;
 }
 
-.sidebar{
+div.main-sidebar{
+//		margin-top:-36.6%;
+	margin-left: -.7%;
 	background-color: rgba(200,200,200,0.5);	
-	height: 100%;
+}
+
+.sidebar{
+
 }
 
 .master-container{
@@ -142,4 +148,13 @@ div#header {
 
 .nbody-sidebar{
 	height: 405px;
+	width: 300px;
+		background-color: rgba(200,200,200,0.5);	
+}
+
+div#research{
+	color: white;
+	font-size: 1.2em;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	height: 500px;
 }
