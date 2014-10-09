@@ -34,7 +34,7 @@ div#header {
 	height: 400px;
 	background-image: url('background.jpg');
 	background-size: cover;
-	background-position: center; // or center center
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -42,9 +42,6 @@ div#header {
 	height: 100px;
 	width: 100px;
 	background-color: black;
-//	background-size: cover;
-//	background-position: center; // or center center
-//	background-repeat: no-repeat;
 }
 
 #ruby img, #rails img, #js img, #backbone img, #bootstrap img, #processing img, #pg img, #latex img{
@@ -82,8 +79,7 @@ div#header {
 }
 
 .portfolio-examples li:hover {
-//	border: thin solid red;
-	
+
 }
 
 .nbody-container *{
@@ -94,6 +90,17 @@ div#header {
 .nbody-container {
 	outline: none;
 	max-width: 700px;
+}
+
+.asteroids-container {
+	outline: none;
+	max-width: 600px;
+	max-height: 405px;
+}
+
+.asteroids-container *{
+	outline: none;
+	max-width: 550px;
 }
 
 
@@ -109,6 +116,7 @@ div#header {
 	margin-top: 3%;
 	width: 180px;
 }
+
 .front-list{
 	margin-left: -20%;
 	color: white;
@@ -132,16 +140,20 @@ div.main-sidebar{
 .nbody-sidebar{
 	height: 405px;
 	width: 300px;
-		background-color: rgba(200,200,200,0.5);	
+	background-color: rgba(200,200,200,0.5);	
 }
 
 div#research{
 	color: white;
 	font-size: 1.2em;
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-	height: 500px;
+
 }
 
 ul.front-list li{
 	margin-top: -5%;
+}
+
+div#contact {
+	height: 500px;
 }

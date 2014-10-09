@@ -1,9 +1,9 @@
-setTimeout(function(){
-	var dataCollect = $('body').data();
-	var dataCollect = dataCollect["bs.scrollspy"];
-	// debugger;
-	dataCollect.options.offset = 100;
-	
-	dataCollect.process();
-	
-}, 1000)
+setInterval(function(){
+	if($(document).scrollTop() < 150){
+		$(".sidebar").css("margin-top", 0)
+	} else if($(document).scrollTop() < 400 && $(document).scrollTop() > 150) {
+		$(".sidebar").css("margin-top", -($(document).scrollTop()) + "px")
+	} else {
+		$(".sidebar").css("margin-top", -400+ "px")
+	}
+}, 1);
