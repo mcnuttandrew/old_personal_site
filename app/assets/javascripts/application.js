@@ -24,4 +24,4 @@
 //= require lib/ship
 //= require lib/bullet
 //= require lib/keymaster-master/keymaster
-// require_tree .
+//= require_tree .
