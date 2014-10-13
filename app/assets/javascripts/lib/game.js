@@ -101,9 +101,7 @@
 				var v4 = this.ruleFour(boids, boids[i]);
 			} else {
 				var v4 = [0,0];
-			}
-			// console.log(v1, v2, v3, v4);
-		
+			}		
 			boids[i].vel[0] += v1[0] + v2[0] + v3[0] + v4[0];
 			boids[i].vel[1] += v1[1] + v2[1] + v3[1] + v4[1];
 		}
